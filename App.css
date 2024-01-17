@@ -1,0 +1,59 @@
+body {
+	background: #141414;
+	color: #ffffff;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* .movie-app > .row {
+	overflow-y: auto ;
+	
+} */
+
+ .image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+ .overlay {
+	position: absolute;
+	background: rgba(6, 15, 8, 0.87);
+	width: 46%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 15px;
+	padding: 15px;
+	text-align: center;
+}  
